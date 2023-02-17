@@ -1,0 +1,143 @@
+---
+- name: Setup secure Nginx webserver (hosting Hello World page)
+  hosts: all
+  force_handlers: true 
+  become: yes
+  vars:
+    doc_root: /usr/share/nginx/html
+    nginx_root: /etc/nginx
+    private_ip: localhost
+    validate_self_cert: no
+
+  tasks:
+  
+    - name: Install Nginx
+      apt: 
+        name: nginx 
+        state: latest
+
+    - name: Create Nginx Backup Directory
+      file:
+        path: "{{ nginx_root }}/backup"
+        state: directory
+      notify: TEST ~ Verify Nginx Backup Dir Creation
+
+    - name: Create Document Backup Directory
+      file:
+        path: "{{ doc_root }}/backup"
+        state: directory
+      notify: TEST ~ Verify Document Backup Dir Creation
+
+    - name: Create Nginx Directory for TLS/SSL Cert & Key Files
+      file:
+        path: "{{ nginx_root }}/ssl"
+        state: directory
+      notify: TEST ~ Verify Nginx SSL Dir Creation
+
+    - name: Generate a Self Signed OpenSSL certificate & key
+      command: openssl req -new -nodes -x509 -subj "/C=US/ST=Pennsylvania/L=Philadelphia/O=IT/CN={{ private_ip }}" -days 3650 -keyout {{ nginx_root }}/ssl/sre.key -out {{ nginx_root }}/ssl/sre.crt -extensions v3_ca creates={{ nginx_root }}/ssl/sre.crt
+      notify:
+        - TEST ~ SSL Key File Creation
+        - TEST ~ SSL Cert File Creation
+
+    - name: Backup Original Nginx Conf
+      command: "mv {{ nginx_root }}/nginx.conf {{ nginx_root }}/backup/nginx.conf"
+
+    - name: Backup Original index.html
+      command: "mv {{ doc_root }}/index.html {{ doc_root }}/backup/index.html"
+    - name: Install Custom index.html
+      copy: 
+        src: index.html
+        dest: "{{ doc_root }}/index.html"
+
+    - name: Install Custom (TLS/SSL modified) Nginx Config File
+      template:
+        src: nginx.conf
+        dest: "{{ nginx_root }}/nginx.conf"
+        validate: "nginx -t -c %s" 
+    - name: Allow HTTPS Traffic
+      ufw:
+        rule: allow
+        name: Nginx Full
+
+    - name: Delete Nginx HTTP Rule
+      ufw:
+        rule: allow
+        name: Nginx HTTP
+        delete: yes
+
+    - name: Restart Nginx
+      service: 
+        name: nginx 
+        state: restarted
+
+    - name: Check Server Status
+      command: service nginx status
+      register: nginx_status
+      notify:
+        - TEST ~ Ensure Nginx is running
+        - TEST ~ Ensure HTTP redirects to HTTPS
+        - TEST ~ Ensure Port 443 is open
+        - TEST ~ Check loading site via HTTPS
+
+    - debug:
+        var: nginx_status
+
+  handlers:
+
+    - name: TEST ~ Verify Nginx Backup Dir Creation
+      wait_for:
+        path: "{{ nginx_root }}/backup"
+        state: present
+        timeout: 1
+
+    - name: TEST ~ Verify Document Backup Dir Creation
+      wait_for:
+        path: "{{ doc_root }}/backup"
+        state: present
+        timeout: 1
+
+    - name: TEST ~ Verify Nginx SSL Dir Creation
+      wait_for:
+        path: "{{ nginx_root }}/ssl"
+        state: present
+        timeout: 1
+
+    - name: TEST ~ SSL Key File Creation
+      wait_for:
+        path: "{{ nginx_root }}/ssl/sre.key"
+        state: present
+        timeout: 1
+    
+    - name: TEST ~ SSL Cert File Creation
+      wait_for:
+        path: "{{ nginx_root }}/ssl/sre.crt"
+        state: present
+        timeout: 1
+
+    - name: TEST ~ Ensure Nginx is running
+      assert:
+        that: "nginx_status.stdout is search('A high performance web server and a reverse proxy server')"
+
+    - name: TEST ~ Ensure HTTP redirects to HTTPS
+      uri:
+        url: http://{{ private_ip }}
+        method: GET
+        status_code: 200
+        validate_certs: "{{ validate_self_cert }}" 
+      register: https_redirect
+
+    - name: TEST ~ Ensure Port 443 is open
+      wait_for: 
+        host: "{{ private_ip }}"
+        port: 443
+        state: started
+        timeout: 5
+
+    - name: TEST ~ Check loading site via HTTPS
+      uri:
+        url: https://{{ private_ip }}
+        method: GET
+        status_code: 200
+        validate_certs: "{{ validate_self_cert }}" 
+      register: https_redirect

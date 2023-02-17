@@ -1,0 +1,798 @@
+2023-02-17 23:57:41,499 p=24670 u=budayabanu n=ansible | [DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 2.7.12 (default, Mar  1 2021, 11:38:31) 
+[GCC 5.4.0 20160609]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2023-02-17 23:57:41,955 p=24670 u=budayabanu n=ansible | [WARNING]: Unable to parse /home/budayabanu/Balaji/git-learn/PartTime/JobSupport/Akhil/sed-challenge-1/webserver-task/hosts as an inventory source
+
+2023-02-17 23:57:41,955 p=24670 u=budayabanu n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2023-02-17 23:57:41,962 p=24670 u=budayabanu n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2023-02-17 23:57:42,160 p=24670 u=budayabanu n=ansible | PLAY [Setup secure Nginx webserver (hosting Hello World page)] ***********************************************************************************************************
+2023-02-17 23:57:42,160 p=24670 u=budayabanu n=ansible | skipping: no hosts matched
+2023-02-17 23:57:42,160 p=24670 u=budayabanu n=ansible | PLAY RECAP ***************************************************************************************************************************************************************
+2023-02-17 23:58:49,249 p=24804 u=budayabanu n=ansible | [DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 2.7.12 (default, Mar  1 2021, 11:38:31) 
+[GCC 5.4.0 20160609]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2023-02-17 23:58:49,658 p=24804 u=budayabanu n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2023-02-17 23:58:49,793 p=24804 u=budayabanu n=ansible | PLAY [Setup secure Nginx webserver (hosting Hello World page)] ***********************************************************************************************************
+2023-02-17 23:58:49,812 p=24804 u=budayabanu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************
+2023-02-17 23:58:51,275 p=24804 u=budayabanu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.11/reference_appendices/interpreter_discovery.html for more information. This feature will be removed in version 2.12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-02-17 23:58:51,275 p=24804 u=budayabanu n=ansible | ok: [localhost]
+2023-02-17 23:58:51,331 p=24804 u=budayabanu n=ansible | TASK [Run 'apt-get update'] **********************************************************************************************************************************************
+2023-02-17 23:58:54,225 p=24804 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Failed to lock apt for exclusive operation: Failed to lock /var/lib/apt/lists/lock"}
+2023-02-17 23:58:54,226 p=24804 u=budayabanu n=ansible | PLAY RECAP ***************************************************************************************************************************************************************
+2023-02-17 23:58:54,227 p=24804 u=budayabanu n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-17 23:59:33,111 p=25046 u=budayabanu n=ansible | [DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 2.7.12 (default, Mar  1 2021, 11:38:31) 
+[GCC 5.4.0 20160609]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2023-02-17 23:59:35,519 p=25046 u=budayabanu n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2023-02-17 23:59:35,672 p=25046 u=budayabanu n=ansible | PLAY [Setup secure Nginx webserver (hosting Hello World page)] ***********************************************************************************************************
+2023-02-17 23:59:35,690 p=25046 u=budayabanu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************
+2023-02-17 23:59:36,854 p=25046 u=budayabanu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.11/reference_appendices/interpreter_discovery.html for more information. This feature will be removed in version 2.12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-02-17 23:59:36,854 p=25046 u=budayabanu n=ansible | ok: [localhost]
+2023-02-17 23:59:36,887 p=25046 u=budayabanu n=ansible | TASK [Run 'apt-get update'] **********************************************************************************************************************************************
+2023-02-17 23:59:45,903 p=25046 u=budayabanu n=ansible | changed: [localhost]
+2023-02-17 23:59:45,922 p=25046 u=budayabanu n=ansible | TASK [Install Nginx] *****************************************************************************************************************************************************
+2023-02-17 23:59:47,226 p=25046 u=budayabanu n=ansible | ok: [localhost]
+2023-02-17 23:59:47,245 p=25046 u=budayabanu n=ansible | TASK [Create Nginx Backup Directory] *************************************************************************************************************************************
+2023-02-17 23:59:47,533 p=25046 u=budayabanu n=ansible | changed: [localhost]
+2023-02-17 23:59:47,551 p=25046 u=budayabanu n=ansible | TASK [Create Document Backup Directory] **********************************************************************************************************************************
+2023-02-17 23:59:47,712 p=25046 u=budayabanu n=ansible | changed: [localhost]
+2023-02-17 23:59:47,729 p=25046 u=budayabanu n=ansible | TASK [Create Nginx Directory for TLS/SSL Cert & Key Files] ***************************************************************************************************************
+2023-02-17 23:59:47,885 p=25046 u=budayabanu n=ansible | changed: [localhost]
+2023-02-17 23:59:47,912 p=25046 u=budayabanu n=ansible | TASK [Generate a Self Signed OpenSSL certificate & key] ******************************************************************************************************************
+2023-02-17 23:59:48,346 p=25046 u=budayabanu n=ansible | changed: [localhost]
+2023-02-17 23:59:48,364 p=25046 u=budayabanu n=ansible | TASK [Backup Original Nginx Conf] ****************************************************************************************************************************************
+2023-02-17 23:59:48,556 p=25046 u=budayabanu n=ansible | changed: [localhost]
+2023-02-17 23:59:48,574 p=25046 u=budayabanu n=ansible | TASK [Backup Original index.html] ****************************************************************************************************************************************
+2023-02-17 23:59:48,734 p=25046 u=budayabanu n=ansible | changed: [localhost]
+2023-02-17 23:59:48,766 p=25046 u=budayabanu n=ansible | TASK [Install Custom index.html] *****************************************************************************************************************************************
+2023-02-17 23:59:49,410 p=25046 u=budayabanu n=ansible | changed: [localhost]
+2023-02-17 23:59:49,433 p=25046 u=budayabanu n=ansible | TASK [Install Custom (TLS/SSL modified) Nginx Config File] ***************************************************************************************************************
+2023-02-17 23:59:49,828 p=25046 u=budayabanu n=ansible | changed: [localhost]
+2023-02-17 23:59:49,858 p=25046 u=budayabanu n=ansible | TASK [Allow HTTPS Traffic] ***********************************************************************************************************************************************
+2023-02-17 23:59:50,255 p=25046 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Failed to find required executable ufw in paths: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"}
+2023-02-17 23:59:50,256 p=25046 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Verify Nginx Backup Dir Creation] ****************************************************************************************************************
+2023-02-17 23:59:50,702 p=25046 u=budayabanu n=ansible | ok: [localhost]
+2023-02-17 23:59:50,703 p=25046 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Verify Document Backup Dir Creation] *************************************************************************************************************
+2023-02-17 23:59:50,972 p=25046 u=budayabanu n=ansible | ok: [localhost]
+2023-02-17 23:59:50,973 p=25046 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Verify Nginx SSL Dir Creation] *******************************************************************************************************************
+2023-02-17 23:59:51,161 p=25046 u=budayabanu n=ansible | ok: [localhost]
+2023-02-17 23:59:51,162 p=25046 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ SSL Key File Creation] ***************************************************************************************************************************
+2023-02-17 23:59:51,356 p=25046 u=budayabanu n=ansible | ok: [localhost]
+2023-02-17 23:59:51,356 p=25046 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ SSL Cert File Creation] **************************************************************************************************************************
+2023-02-17 23:59:51,594 p=25046 u=budayabanu n=ansible | ok: [localhost]
+2023-02-17 23:59:51,596 p=25046 u=budayabanu n=ansible | PLAY RECAP ***************************************************************************************************************************************************************
+2023-02-17 23:59:51,596 p=25046 u=budayabanu n=ansible | localhost                  : ok=16   changed=9    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-18 00:01:59,923 p=5462 u=budayabanu n=ansible | [DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 2.7.12 (default, Mar  1 2021, 11:38:31) 
+[GCC 5.4.0 20160609]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2023-02-18 00:02:02,504 p=5462 u=budayabanu n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2023-02-18 00:02:02,638 p=5462 u=budayabanu n=ansible | PLAY [Setup secure Nginx webserver (hosting Hello World page)] ***********************************************************************************************************
+2023-02-18 00:02:02,649 p=5462 u=budayabanu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************
+2023-02-18 00:02:03,953 p=5462 u=budayabanu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.11/reference_appendices/interpreter_discovery.html for more information. This feature will be removed in version 2.12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-02-18 00:02:03,953 p=5462 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:02:03,988 p=5462 u=budayabanu n=ansible | TASK [Run 'apt-get update'] **********************************************************************************************************************************************
+2023-02-18 00:02:11,775 p=5462 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:02:11,798 p=5462 u=budayabanu n=ansible | TASK [Install Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:02:13,238 p=5462 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:02:13,267 p=5462 u=budayabanu n=ansible | TASK [Create Nginx Backup Directory] *************************************************************************************************************************************
+2023-02-18 00:02:13,583 p=5462 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:02:13,602 p=5462 u=budayabanu n=ansible | TASK [Create Document Backup Directory] **********************************************************************************************************************************
+2023-02-18 00:02:13,759 p=5462 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:02:13,776 p=5462 u=budayabanu n=ansible | TASK [Create Nginx Directory for TLS/SSL Cert & Key Files] ***************************************************************************************************************
+2023-02-18 00:02:13,933 p=5462 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:02:13,962 p=5462 u=budayabanu n=ansible | TASK [Generate a Self Signed OpenSSL certificate & key] ******************************************************************************************************************
+2023-02-18 00:02:14,238 p=5462 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:02:14,262 p=5462 u=budayabanu n=ansible | TASK [Backup Original Nginx Conf] ****************************************************************************************************************************************
+2023-02-18 00:02:14,430 p=5462 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:02:14,451 p=5462 u=budayabanu n=ansible | TASK [Backup Original index.html] ****************************************************************************************************************************************
+2023-02-18 00:02:14,635 p=5462 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:02:14,668 p=5462 u=budayabanu n=ansible | TASK [Install Custom index.html] *****************************************************************************************************************************************
+2023-02-18 00:02:15,276 p=5462 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:02:15,296 p=5462 u=budayabanu n=ansible | TASK [Install Custom (TLS/SSL modified) Nginx Config File] ***************************************************************************************************************
+2023-02-18 00:02:15,678 p=5462 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:02:15,708 p=5462 u=budayabanu n=ansible | TASK [Allow HTTPS Traffic] ***********************************************************************************************************************************************
+2023-02-18 00:02:16,805 p=5462 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:02:16,838 p=5462 u=budayabanu n=ansible | TASK [Delete Nginx HTTP Rule] ********************************************************************************************************************************************
+2023-02-18 00:02:17,693 p=5462 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:02:17,713 p=5462 u=budayabanu n=ansible | TASK [Restart Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:02:20,953 p=5462 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Unable to start service nginx: Job for nginx.service failed because the control process exited with error code. See \"systemctl status nginx.service\" and \"journalctl -xe\" for details.\n"}
+2023-02-18 00:02:20,955 p=5462 u=budayabanu n=ansible | PLAY RECAP ***************************************************************************************************************************************************************
+2023-02-18 00:02:20,955 p=5462 u=budayabanu n=ansible | localhost                  : ok=13   changed=7    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-18 00:03:20,423 p=12807 u=budayabanu n=ansible | [DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 2.7.12 (default, Mar  1 2021, 11:38:31) 
+[GCC 5.4.0 20160609]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2023-02-18 00:03:22,860 p=12807 u=budayabanu n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2023-02-18 00:03:23,001 p=12807 u=budayabanu n=ansible | PLAY [Setup secure Nginx webserver (hosting Hello World page)] ***********************************************************************************************************
+2023-02-18 00:03:23,014 p=12807 u=budayabanu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************
+2023-02-18 00:03:24,296 p=12807 u=budayabanu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.11/reference_appendices/interpreter_discovery.html for more information. This feature will be removed in version 2.12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-02-18 00:03:24,296 p=12807 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:03:24,352 p=12807 u=budayabanu n=ansible | TASK [Run 'apt-get update'] **********************************************************************************************************************************************
+2023-02-18 00:03:27,532 p=12807 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Failed to lock apt for exclusive operation: Failed to lock /var/lib/apt/lists/lock"}
+2023-02-18 00:03:27,534 p=12807 u=budayabanu n=ansible | PLAY RECAP ***************************************************************************************************************************************************************
+2023-02-18 00:03:27,534 p=12807 u=budayabanu n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-18 00:03:36,428 p=14442 u=budayabanu n=ansible | [DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 2.7.12 (default, Mar  1 2021, 11:38:31) 
+[GCC 5.4.0 20160609]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2023-02-18 00:03:38,730 p=14442 u=budayabanu n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2023-02-18 00:03:38,885 p=14442 u=budayabanu n=ansible | PLAY [Setup secure Nginx webserver (hosting Hello World page)] ***********************************************************************************************************
+2023-02-18 00:03:38,901 p=14442 u=budayabanu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************
+2023-02-18 00:03:40,259 p=14442 u=budayabanu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.11/reference_appendices/interpreter_discovery.html for more information. This feature will be removed in version 2.12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-02-18 00:03:40,259 p=14442 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:03:40,314 p=14442 u=budayabanu n=ansible | TASK [Run 'apt-get update'] **********************************************************************************************************************************************
+2023-02-18 00:03:43,616 p=14442 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "msg": "Failed to lock apt for exclusive operation: Failed to lock /var/lib/apt/lists/lock"}
+2023-02-18 00:03:43,618 p=14442 u=budayabanu n=ansible | PLAY RECAP ***************************************************************************************************************************************************************
+2023-02-18 00:03:43,618 p=14442 u=budayabanu n=ansible | localhost                  : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-18 00:04:12,118 p=17457 u=budayabanu n=ansible | [DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 2.7.12 (default, Mar  1 2021, 11:38:31) 
+[GCC 5.4.0 20160609]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2023-02-18 00:04:14,479 p=17457 u=budayabanu n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2023-02-18 00:04:14,673 p=17457 u=budayabanu n=ansible | PLAY [Setup secure Nginx webserver (hosting Hello World page)] ***********************************************************************************************************
+2023-02-18 00:04:14,705 p=17457 u=budayabanu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************
+2023-02-18 00:04:16,099 p=17457 u=budayabanu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.11/reference_appendices/interpreter_discovery.html for more information. This feature will be removed in version 2.12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-02-18 00:04:16,099 p=17457 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:04:16,135 p=17457 u=budayabanu n=ansible | TASK [Install Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:04:19,851 p=17457 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:04:19,870 p=17457 u=budayabanu n=ansible | TASK [Create Nginx Backup Directory] *************************************************************************************************************************************
+2023-02-18 00:04:20,314 p=17457 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:04:20,346 p=17457 u=budayabanu n=ansible | TASK [Create Document Backup Directory] **********************************************************************************************************************************
+2023-02-18 00:04:20,612 p=17457 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:04:20,645 p=17457 u=budayabanu n=ansible | TASK [Create Nginx Directory for TLS/SSL Cert & Key Files] ***************************************************************************************************************
+2023-02-18 00:04:20,886 p=17457 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:04:20,921 p=17457 u=budayabanu n=ansible | TASK [Generate a Self Signed OpenSSL certificate & key] ******************************************************************************************************************
+2023-02-18 00:04:21,322 p=17457 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:04:21,341 p=17457 u=budayabanu n=ansible | TASK [Backup Original Nginx Conf] ****************************************************************************************************************************************
+2023-02-18 00:04:21,502 p=17457 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:04:21,522 p=17457 u=budayabanu n=ansible | TASK [Backup Original index.html] ****************************************************************************************************************************************
+2023-02-18 00:04:21,697 p=17457 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:04:21,730 p=17457 u=budayabanu n=ansible | TASK [Install Custom index.html] *****************************************************************************************************************************************
+2023-02-18 00:04:22,481 p=17457 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:04:22,503 p=17457 u=budayabanu n=ansible | TASK [Install Custom (TLS/SSL modified) Nginx Config File] ***************************************************************************************************************
+2023-02-18 00:04:22,863 p=17457 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:04:22,881 p=17457 u=budayabanu n=ansible | TASK [Allow HTTPS Traffic] ***********************************************************************************************************************************************
+2023-02-18 00:04:23,778 p=17457 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:04:23,796 p=17457 u=budayabanu n=ansible | TASK [Delete Nginx HTTP Rule] ********************************************************************************************************************************************
+2023-02-18 00:04:24,345 p=17457 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:04:24,375 p=17457 u=budayabanu n=ansible | TASK [Restart Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:04:25,016 p=17457 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:04:25,046 p=17457 u=budayabanu n=ansible | TASK [Check Server Status] ***********************************************************************************************************************************************
+2023-02-18 00:04:25,278 p=17457 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:04:25,308 p=17457 u=budayabanu n=ansible | TASK [debug] *************************************************************************************************************************************************************
+2023-02-18 00:04:25,360 p=17457 u=budayabanu n=ansible | ok: [localhost] => {
+    "nginx_status": {
+        "changed": true, 
+        "cmd": [
+            "service", 
+            "nginx", 
+            "status"
+        ], 
+        "delta": "0:00:00.018087", 
+        "end": "2023-02-18 00:04:25.250835", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2023-02-18 00:04:25.232748", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "● nginx.service - A high performance web server and a reverse proxy server\n   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)\n   Active: active (running) since Sat 2023-02-18 00:04:24 IST; 281ms ago\n  Process: 19202 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)\n  Process: 19191 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)\n Main PID: 19205 (nginx)\n    Tasks: 5\n   Memory: 4.9M\n      CPU: 26ms\n   CGroup: /system.slice/nginx.service\n           ├─19205 nginx: master process /usr/sbin/nginx -g daemon on; master_process on\n           ├─19207 nginx: worker process                           \n           ├─19208 nginx: worker process                           \n           ├─19209 nginx: worker process                           \n           └─19210 nginx: worker process                           \n\nFeb 18 00:04:24 sherlock-HP-EliteBook-820-G3 systemd[1]: Starting A high performance web server and a reverse proxy server...\nFeb 18 00:04:24 sherlock-HP-EliteBook-820-G3 systemd[1]: Started A high performance web server and a reverse proxy server.", 
+        "stdout_lines": [
+            "● nginx.service - A high performance web server and a reverse proxy server", 
+            "   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)", 
+            "   Active: active (running) since Sat 2023-02-18 00:04:24 IST; 281ms ago", 
+            "  Process: 19202 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)", 
+            "  Process: 19191 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)", 
+            " Main PID: 19205 (nginx)", 
+            "    Tasks: 5", 
+            "   Memory: 4.9M", 
+            "      CPU: 26ms", 
+            "   CGroup: /system.slice/nginx.service", 
+            "           ├─19205 nginx: master process /usr/sbin/nginx -g daemon on; master_process on", 
+            "           ├─19207 nginx: worker process                           ", 
+            "           ├─19208 nginx: worker process                           ", 
+            "           ├─19209 nginx: worker process                           ", 
+            "           └─19210 nginx: worker process                           ", 
+            "", 
+            "Feb 18 00:04:24 sherlock-HP-EliteBook-820-G3 systemd[1]: Starting A high performance web server and a reverse proxy server...", 
+            "Feb 18 00:04:24 sherlock-HP-EliteBook-820-G3 systemd[1]: Started A high performance web server and a reverse proxy server."
+        ]
+    }
+}
+2023-02-18 00:04:25,389 p=17457 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure Nginx is running] *************************************************************************************************************************
+2023-02-18 00:04:25,439 p=17457 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {
+    "assertion": "nginx_status.stdout == ' * nginx is running'", 
+    "changed": false, 
+    "evaluated_to": false, 
+    "msg": "Assertion failed"
+}
+2023-02-18 00:04:25,440 p=17457 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure HTTP redirects to HTTPS] ******************************************************************************************************************
+2023-02-18 00:04:55,997 p=17457 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid variable name in 'register' specified: 'https-redirect'"}
+2023-02-18 00:04:55,998 p=17457 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure Port 443 is open] *************************************************************************************************************************
+2023-02-18 00:05:02,439 p=17457 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {"changed": false, "elapsed": 6, "msg": "Timeout when waiting for 192.168.0.1:443"}
+2023-02-18 00:05:02,439 p=17457 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Check loading site via HTTPS] ********************************************************************************************************************
+2023-02-18 00:05:32,818 p=17457 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid variable name in 'register' specified: 'https-redirect'"}
+2023-02-18 00:05:32,819 p=17457 u=budayabanu n=ansible | NO MORE HOSTS LEFT *******************************************************************************************************************************************************
+2023-02-18 00:05:32,821 p=17457 u=budayabanu n=ansible | PLAY RECAP ***************************************************************************************************************************************************************
+2023-02-18 00:05:32,821 p=17457 u=budayabanu n=ansible | localhost                  : ok=15   changed=6    unreachable=0    failed=4    skipped=0    rescued=0    ignored=0   
+2023-02-18 00:06:04,674 p=27396 u=budayabanu n=ansible | [DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 2.7.12 (default, Mar  1 2021, 11:38:31) 
+[GCC 5.4.0 20160609]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2023-02-18 00:06:07,340 p=27396 u=budayabanu n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2023-02-18 00:06:07,475 p=27396 u=budayabanu n=ansible | PLAY [Setup secure Nginx webserver (hosting Hello World page)] ***********************************************************************************************************
+2023-02-18 00:06:07,487 p=27396 u=budayabanu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************
+2023-02-18 00:06:09,795 p=27396 u=budayabanu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.11/reference_appendices/interpreter_discovery.html for more information. This feature will be removed in version 2.12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-02-18 00:06:09,796 p=27396 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:06:09,880 p=27396 u=budayabanu n=ansible | TASK [Install Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:06:13,725 p=27396 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:06:13,745 p=27396 u=budayabanu n=ansible | TASK [Create Nginx Backup Directory] *************************************************************************************************************************************
+2023-02-18 00:06:14,147 p=27396 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:06:14,178 p=27396 u=budayabanu n=ansible | TASK [Create Document Backup Directory] **********************************************************************************************************************************
+2023-02-18 00:06:14,434 p=27396 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:06:14,467 p=27396 u=budayabanu n=ansible | TASK [Create Nginx Directory for TLS/SSL Cert & Key Files] ***************************************************************************************************************
+2023-02-18 00:06:14,719 p=27396 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:06:14,753 p=27396 u=budayabanu n=ansible | TASK [Generate a Self Signed OpenSSL certificate & key] ******************************************************************************************************************
+2023-02-18 00:06:15,167 p=27396 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:06:15,201 p=27396 u=budayabanu n=ansible | TASK [Backup Original Nginx Conf] ****************************************************************************************************************************************
+2023-02-18 00:06:15,427 p=27396 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:06:15,457 p=27396 u=budayabanu n=ansible | TASK [Backup Original index.html] ****************************************************************************************************************************************
+2023-02-18 00:06:15,679 p=27396 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:06:15,708 p=27396 u=budayabanu n=ansible | TASK [Install Custom index.html] *****************************************************************************************************************************************
+2023-02-18 00:06:16,470 p=27396 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:06:16,495 p=27396 u=budayabanu n=ansible | TASK [Install Custom (TLS/SSL modified) Nginx Config File] ***************************************************************************************************************
+2023-02-18 00:06:16,878 p=27396 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:06:16,902 p=27396 u=budayabanu n=ansible | TASK [Allow HTTPS Traffic] ***********************************************************************************************************************************************
+2023-02-18 00:06:17,748 p=27396 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:06:17,766 p=27396 u=budayabanu n=ansible | TASK [Delete Nginx HTTP Rule] ********************************************************************************************************************************************
+2023-02-18 00:06:18,265 p=27396 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:06:18,282 p=27396 u=budayabanu n=ansible | TASK [Restart Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:06:18,970 p=27396 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:06:18,997 p=27396 u=budayabanu n=ansible | TASK [Check Server Status] ***********************************************************************************************************************************************
+2023-02-18 00:06:19,190 p=27396 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:06:19,224 p=27396 u=budayabanu n=ansible | TASK [debug] *************************************************************************************************************************************************************
+2023-02-18 00:06:19,267 p=27396 u=budayabanu n=ansible | ok: [localhost] => {
+    "nginx_status": {
+        "changed": true, 
+        "cmd": [
+            "service", 
+            "nginx", 
+            "status"
+        ], 
+        "delta": "0:00:00.018662", 
+        "end": "2023-02-18 00:06:19.154174", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2023-02-18 00:06:19.135512", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "● nginx.service - A high performance web server and a reverse proxy server\n   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)\n   Active: active (running) since Sat 2023-02-18 00:06:18 IST; 228ms ago\n  Process: 29100 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)\n  Process: 29121 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)\n  Process: 29107 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)\n Main PID: 29126 (nginx)\n    Tasks: 5\n   Memory: 4.9M\n      CPU: 27ms\n   CGroup: /system.slice/nginx.service\n           ├─29126 nginx: master process /usr/sbin/nginx -g daemon on; master_process on\n           ├─29128 nginx: worker process                           \n           ├─29129 nginx: worker process                           \n           ├─29131 nginx: worker process                           \n           └─29132 nginx: worker process                           \n\nFeb 18 00:06:18 sherlock-HP-EliteBook-820-G3 systemd[1]: Starting A high performance web server and a reverse proxy server...\nFeb 18 00:06:18 sherlock-HP-EliteBook-820-G3 systemd[1]: Started A high performance web server and a reverse proxy server.", 
+        "stdout_lines": [
+            "● nginx.service - A high performance web server and a reverse proxy server", 
+            "   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)", 
+            "   Active: active (running) since Sat 2023-02-18 00:06:18 IST; 228ms ago", 
+            "  Process: 29100 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)", 
+            "  Process: 29121 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)", 
+            "  Process: 29107 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)", 
+            " Main PID: 29126 (nginx)", 
+            "    Tasks: 5", 
+            "   Memory: 4.9M", 
+            "      CPU: 27ms", 
+            "   CGroup: /system.slice/nginx.service", 
+            "           ├─29126 nginx: master process /usr/sbin/nginx -g daemon on; master_process on", 
+            "           ├─29128 nginx: worker process                           ", 
+            "           ├─29129 nginx: worker process                           ", 
+            "           ├─29131 nginx: worker process                           ", 
+            "           └─29132 nginx: worker process                           ", 
+            "", 
+            "Feb 18 00:06:18 sherlock-HP-EliteBook-820-G3 systemd[1]: Starting A high performance web server and a reverse proxy server...", 
+            "Feb 18 00:06:18 sherlock-HP-EliteBook-820-G3 systemd[1]: Started A high performance web server and a reverse proxy server."
+        ]
+    }
+}
+2023-02-18 00:06:19,301 p=27396 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure Nginx is running] *************************************************************************************************************************
+2023-02-18 00:06:19,354 p=27396 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {
+    "assertion": "nginx_status.stdout == ' * Started A high performance web server'", 
+    "changed": false, 
+    "evaluated_to": false, 
+    "msg": "Assertion failed"
+}
+2023-02-18 00:06:19,354 p=27396 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure HTTP redirects to HTTPS] ******************************************************************************************************************
+2023-02-18 00:06:20,002 p=27396 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid variable name in 'register' specified: 'https-redirect'"}
+2023-02-18 00:06:20,003 p=27396 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure Port 443 is open] *************************************************************************************************************************
+2023-02-18 00:06:20,475 p=27396 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:06:20,476 p=27396 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Check loading site via HTTPS] ********************************************************************************************************************
+2023-02-18 00:06:20,892 p=27396 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid variable name in 'register' specified: 'https-redirect'"}
+2023-02-18 00:06:20,892 p=27396 u=budayabanu n=ansible | NO MORE HOSTS LEFT *******************************************************************************************************************************************************
+2023-02-18 00:06:20,894 p=27396 u=budayabanu n=ansible | PLAY RECAP ***************************************************************************************************************************************************************
+2023-02-18 00:06:20,894 p=27396 u=budayabanu n=ansible | localhost                  : ok=16   changed=6    unreachable=0    failed=3    skipped=0    rescued=0    ignored=0   
+2023-02-18 00:07:13,302 p=1214 u=budayabanu n=ansible | [DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 2.7.12 (default, Mar  1 2021, 11:38:31) 
+[GCC 5.4.0 20160609]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2023-02-18 00:07:15,601 p=1214 u=budayabanu n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2023-02-18 00:07:15,736 p=1214 u=budayabanu n=ansible | PLAY [Setup secure Nginx webserver (hosting Hello World page)] ***********************************************************************************************************
+2023-02-18 00:07:15,747 p=1214 u=budayabanu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************
+2023-02-18 00:07:16,981 p=1214 u=budayabanu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.11/reference_appendices/interpreter_discovery.html for more information. This feature will be removed in version 2.12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-02-18 00:07:16,981 p=1214 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:07:17,016 p=1214 u=budayabanu n=ansible | TASK [Install Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:07:20,574 p=1214 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:07:20,592 p=1214 u=budayabanu n=ansible | TASK [Create Nginx Backup Directory] *************************************************************************************************************************************
+2023-02-18 00:07:20,943 p=1214 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:07:20,962 p=1214 u=budayabanu n=ansible | TASK [Create Document Backup Directory] **********************************************************************************************************************************
+2023-02-18 00:07:21,188 p=1214 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:07:21,219 p=1214 u=budayabanu n=ansible | TASK [Create Nginx Directory for TLS/SSL Cert & Key Files] ***************************************************************************************************************
+2023-02-18 00:07:21,406 p=1214 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:07:21,424 p=1214 u=budayabanu n=ansible | TASK [Generate a Self Signed OpenSSL certificate & key] ******************************************************************************************************************
+2023-02-18 00:07:21,726 p=1214 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:07:21,752 p=1214 u=budayabanu n=ansible | TASK [Backup Original Nginx Conf] ****************************************************************************************************************************************
+2023-02-18 00:07:21,915 p=1214 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:07:21,939 p=1214 u=budayabanu n=ansible | TASK [Backup Original index.html] ****************************************************************************************************************************************
+2023-02-18 00:07:22,103 p=1214 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:07:22,135 p=1214 u=budayabanu n=ansible | TASK [Install Custom index.html] *****************************************************************************************************************************************
+2023-02-18 00:07:22,812 p=1214 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:07:22,841 p=1214 u=budayabanu n=ansible | TASK [Install Custom (TLS/SSL modified) Nginx Config File] ***************************************************************************************************************
+2023-02-18 00:07:23,248 p=1214 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:07:23,269 p=1214 u=budayabanu n=ansible | TASK [Allow HTTPS Traffic] ***********************************************************************************************************************************************
+2023-02-18 00:07:24,340 p=1214 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:07:24,371 p=1214 u=budayabanu n=ansible | TASK [Delete Nginx HTTP Rule] ********************************************************************************************************************************************
+2023-02-18 00:07:25,060 p=1214 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:07:25,099 p=1214 u=budayabanu n=ansible | TASK [Restart Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:07:25,848 p=1214 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:07:25,880 p=1214 u=budayabanu n=ansible | TASK [Check Server Status] ***********************************************************************************************************************************************
+2023-02-18 00:07:26,114 p=1214 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:07:26,144 p=1214 u=budayabanu n=ansible | TASK [debug] *************************************************************************************************************************************************************
+2023-02-18 00:07:26,178 p=1214 u=budayabanu n=ansible | ok: [localhost] => {
+    "nginx_status": {
+        "changed": true, 
+        "cmd": [
+            "service", 
+            "nginx", 
+            "status"
+        ], 
+        "delta": "0:00:00.018070", 
+        "end": "2023-02-18 00:07:26.089894", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2023-02-18 00:07:26.071824", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "● nginx.service - A high performance web server and a reverse proxy server\n   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)\n   Active: active (running) since Sat 2023-02-18 00:07:25 IST; 280ms ago\n  Process: 2702 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)\n  Process: 2717 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)\n  Process: 2704 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)\n Main PID: 2722 (nginx)\n    Tasks: 5\n   Memory: 4.8M\n      CPU: 25ms\n   CGroup: /system.slice/nginx.service\n           ├─2722 nginx: master process /usr/sbin/nginx -g daemon on; master_process on\n           ├─2725 nginx: worker process                           \n           ├─2726 nginx: worker process                           \n           ├─2727 nginx: worker process                           \n           └─2728 nginx: worker process                           \n\nFeb 18 00:07:25 sherlock-HP-EliteBook-820-G3 systemd[1]: Starting A high performance web server and a reverse proxy server...\nFeb 18 00:07:25 sherlock-HP-EliteBook-820-G3 systemd[1]: Started A high performance web server and a reverse proxy server.", 
+        "stdout_lines": [
+            "● nginx.service - A high performance web server and a reverse proxy server", 
+            "   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)", 
+            "   Active: active (running) since Sat 2023-02-18 00:07:25 IST; 280ms ago", 
+            "  Process: 2702 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)", 
+            "  Process: 2717 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)", 
+            "  Process: 2704 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)", 
+            " Main PID: 2722 (nginx)", 
+            "    Tasks: 5", 
+            "   Memory: 4.8M", 
+            "      CPU: 25ms", 
+            "   CGroup: /system.slice/nginx.service", 
+            "           ├─2722 nginx: master process /usr/sbin/nginx -g daemon on; master_process on", 
+            "           ├─2725 nginx: worker process                           ", 
+            "           ├─2726 nginx: worker process                           ", 
+            "           ├─2727 nginx: worker process                           ", 
+            "           └─2728 nginx: worker process                           ", 
+            "", 
+            "Feb 18 00:07:25 sherlock-HP-EliteBook-820-G3 systemd[1]: Starting A high performance web server and a reverse proxy server...", 
+            "Feb 18 00:07:25 sherlock-HP-EliteBook-820-G3 systemd[1]: Started A high performance web server and a reverse proxy server."
+        ]
+    }
+}
+2023-02-18 00:07:26,197 p=1214 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure Nginx is running] *************************************************************************************************************************
+2023-02-18 00:07:26,229 p=1214 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {
+    "assertion": "nginx_status.stdout == ' * A high performance web server and a reverse proxy server'", 
+    "changed": false, 
+    "evaluated_to": false, 
+    "msg": "Assertion failed"
+}
+2023-02-18 00:07:26,229 p=1214 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure HTTP redirects to HTTPS] ******************************************************************************************************************
+2023-02-18 00:07:26,752 p=1214 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid variable name in 'register' specified: 'https-redirect'"}
+2023-02-18 00:07:26,753 p=1214 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure Port 443 is open] *************************************************************************************************************************
+2023-02-18 00:07:27,104 p=1214 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:07:27,104 p=1214 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Check loading site via HTTPS] ********************************************************************************************************************
+2023-02-18 00:07:27,467 p=1214 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {"msg": "Invalid variable name in 'register' specified: 'https-redirect'"}
+2023-02-18 00:07:27,468 p=1214 u=budayabanu n=ansible | NO MORE HOSTS LEFT *******************************************************************************************************************************************************
+2023-02-18 00:07:27,469 p=1214 u=budayabanu n=ansible | PLAY RECAP ***************************************************************************************************************************************************************
+2023-02-18 00:07:27,470 p=1214 u=budayabanu n=ansible | localhost                  : ok=16   changed=6    unreachable=0    failed=3    skipped=0    rescued=0    ignored=0   
+2023-02-18 00:09:34,421 p=14187 u=budayabanu n=ansible | [DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 2.7.12 (default, Mar  1 2021, 11:38:31) 
+[GCC 5.4.0 20160609]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2023-02-18 00:09:36,572 p=14187 u=budayabanu n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2023-02-18 00:09:36,695 p=14187 u=budayabanu n=ansible | PLAY [Setup secure Nginx webserver (hosting Hello World page)] ***********************************************************************************************************
+2023-02-18 00:09:36,707 p=14187 u=budayabanu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************
+2023-02-18 00:09:37,936 p=14187 u=budayabanu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.11/reference_appendices/interpreter_discovery.html for more information. This feature will be removed in version 2.12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-02-18 00:09:37,936 p=14187 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:09:37,990 p=14187 u=budayabanu n=ansible | TASK [Install Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:09:41,704 p=14187 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:09:41,722 p=14187 u=budayabanu n=ansible | TASK [Create Nginx Backup Directory] *************************************************************************************************************************************
+2023-02-18 00:09:42,042 p=14187 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:09:42,062 p=14187 u=budayabanu n=ansible | TASK [Create Document Backup Directory] **********************************************************************************************************************************
+2023-02-18 00:09:42,279 p=14187 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:09:42,312 p=14187 u=budayabanu n=ansible | TASK [Create Nginx Directory for TLS/SSL Cert & Key Files] ***************************************************************************************************************
+2023-02-18 00:09:42,575 p=14187 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:09:42,598 p=14187 u=budayabanu n=ansible | TASK [Generate a Self Signed OpenSSL certificate & key] ******************************************************************************************************************
+2023-02-18 00:09:42,987 p=14187 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:09:43,021 p=14187 u=budayabanu n=ansible | TASK [Backup Original Nginx Conf] ****************************************************************************************************************************************
+2023-02-18 00:09:43,248 p=14187 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:09:43,276 p=14187 u=budayabanu n=ansible | TASK [Backup Original index.html] ****************************************************************************************************************************************
+2023-02-18 00:09:43,508 p=14187 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:09:43,543 p=14187 u=budayabanu n=ansible | TASK [Install Custom index.html] *****************************************************************************************************************************************
+2023-02-18 00:09:44,295 p=14187 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:09:44,328 p=14187 u=budayabanu n=ansible | TASK [Install Custom (TLS/SSL modified) Nginx Config File] ***************************************************************************************************************
+2023-02-18 00:09:44,705 p=14187 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:09:44,723 p=14187 u=budayabanu n=ansible | TASK [Allow HTTPS Traffic] ***********************************************************************************************************************************************
+2023-02-18 00:09:45,738 p=14187 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:09:45,757 p=14187 u=budayabanu n=ansible | TASK [Delete Nginx HTTP Rule] ********************************************************************************************************************************************
+2023-02-18 00:09:46,338 p=14187 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:09:46,366 p=14187 u=budayabanu n=ansible | TASK [Restart Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:09:46,983 p=14187 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:09:47,012 p=14187 u=budayabanu n=ansible | TASK [Check Server Status] ***********************************************************************************************************************************************
+2023-02-18 00:09:47,180 p=14187 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:09:47,197 p=14187 u=budayabanu n=ansible | TASK [debug] *************************************************************************************************************************************************************
+2023-02-18 00:09:47,233 p=14187 u=budayabanu n=ansible | ok: [localhost] => {
+    "nginx_status": {
+        "changed": true, 
+        "cmd": [
+            "service", 
+            "nginx", 
+            "status"
+        ], 
+        "delta": "0:00:00.012904", 
+        "end": "2023-02-18 00:09:47.159695", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2023-02-18 00:09:47.146791", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "● nginx.service - A high performance web server and a reverse proxy server\n   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)\n   Active: active (running) since Sat 2023-02-18 00:09:46 IST; 210ms ago\n  Process: 15751 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)\n  Process: 15764 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)\n  Process: 15753 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)\n Main PID: 15767 (nginx)\n    Tasks: 5\n   Memory: 4.9M\n      CPU: 23ms\n   CGroup: /system.slice/nginx.service\n           ├─15767 nginx: master process /usr/sbin/nginx -g daemon on; master_process on\n           ├─15770 nginx: worker process                           \n           ├─15773 nginx: worker process                           \n           ├─15778 nginx: worker process                           \n           └─15779 nginx: worker process                           \n\nFeb 18 00:09:46 sherlock-HP-EliteBook-820-G3 systemd[1]: Starting A high performance web server and a reverse proxy server...\nFeb 18 00:09:46 sherlock-HP-EliteBook-820-G3 systemd[1]: Started A high performance web server and a reverse proxy server.", 
+        "stdout_lines": [
+            "● nginx.service - A high performance web server and a reverse proxy server", 
+            "   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)", 
+            "   Active: active (running) since Sat 2023-02-18 00:09:46 IST; 210ms ago", 
+            "  Process: 15751 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)", 
+            "  Process: 15764 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)", 
+            "  Process: 15753 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)", 
+            " Main PID: 15767 (nginx)", 
+            "    Tasks: 5", 
+            "   Memory: 4.9M", 
+            "      CPU: 23ms", 
+            "   CGroup: /system.slice/nginx.service", 
+            "           ├─15767 nginx: master process /usr/sbin/nginx -g daemon on; master_process on", 
+            "           ├─15770 nginx: worker process                           ", 
+            "           ├─15773 nginx: worker process                           ", 
+            "           ├─15778 nginx: worker process                           ", 
+            "           └─15779 nginx: worker process                           ", 
+            "", 
+            "Feb 18 00:09:46 sherlock-HP-EliteBook-820-G3 systemd[1]: Starting A high performance web server and a reverse proxy server...", 
+            "Feb 18 00:09:46 sherlock-HP-EliteBook-820-G3 systemd[1]: Started A high performance web server and a reverse proxy server."
+        ]
+    }
+}
+2023-02-18 00:09:47,261 p=14187 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure Nginx is running] *************************************************************************************************************************
+2023-02-18 00:09:47,308 p=14187 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {
+    "assertion": "nginx_status.stdout == ' * A high performance web server and a reverse proxy server'", 
+    "changed": false, 
+    "evaluated_to": false, 
+    "msg": "Assertion failed"
+}
+2023-02-18 00:09:47,309 p=14187 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure HTTP redirects to HTTPS] ******************************************************************************************************************
+2023-02-18 00:09:47,828 p=14187 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:09:47,828 p=14187 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure Port 443 is open] *************************************************************************************************************************
+2023-02-18 00:09:48,200 p=14187 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:09:48,200 p=14187 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Check loading site via HTTPS] ********************************************************************************************************************
+2023-02-18 00:09:48,591 p=14187 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:09:48,592 p=14187 u=budayabanu n=ansible | NO MORE HOSTS LEFT *******************************************************************************************************************************************************
+2023-02-18 00:09:48,594 p=14187 u=budayabanu n=ansible | PLAY RECAP ***************************************************************************************************************************************************************
+2023-02-18 00:09:48,595 p=14187 u=budayabanu n=ansible | localhost                  : ok=18   changed=6    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-18 00:10:00,676 p=17069 u=budayabanu n=ansible | [DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 2.7.12 (default, Mar  1 2021, 11:38:31) 
+[GCC 5.4.0 20160609]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2023-02-18 00:10:04,064 p=17069 u=budayabanu n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2023-02-18 00:10:04,201 p=17069 u=budayabanu n=ansible | PLAY [Setup secure Nginx webserver (hosting Hello World page)] ***********************************************************************************************************
+2023-02-18 00:10:04,213 p=17069 u=budayabanu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************
+2023-02-18 00:10:05,619 p=17069 u=budayabanu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.11/reference_appendices/interpreter_discovery.html for more information. This feature will be removed in version 2.12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-02-18 00:10:05,619 p=17069 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:10:05,675 p=17069 u=budayabanu n=ansible | TASK [Install Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:10:07,042 p=17069 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:10:07,062 p=17069 u=budayabanu n=ansible | TASK [Create Nginx Backup Directory] *************************************************************************************************************************************
+2023-02-18 00:10:07,417 p=17069 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:10:07,446 p=17069 u=budayabanu n=ansible | TASK [Create Document Backup Directory] **********************************************************************************************************************************
+2023-02-18 00:10:07,661 p=17069 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:10:07,681 p=17069 u=budayabanu n=ansible | TASK [Create Nginx Directory for TLS/SSL Cert & Key Files] ***************************************************************************************************************
+2023-02-18 00:10:07,858 p=17069 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:10:07,877 p=17069 u=budayabanu n=ansible | TASK [Generate a Self Signed OpenSSL certificate & key] ******************************************************************************************************************
+2023-02-18 00:10:08,139 p=17069 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:10:08,158 p=17069 u=budayabanu n=ansible | TASK [Backup Original Nginx Conf] ****************************************************************************************************************************************
+2023-02-18 00:10:08,329 p=17069 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:10:08,351 p=17069 u=budayabanu n=ansible | TASK [Backup Original index.html] ****************************************************************************************************************************************
+2023-02-18 00:10:08,547 p=17069 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:10:08,578 p=17069 u=budayabanu n=ansible | TASK [Install Custom index.html] *****************************************************************************************************************************************
+2023-02-18 00:10:09,364 p=17069 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:10:09,410 p=17069 u=budayabanu n=ansible | TASK [Install Custom (TLS/SSL modified) Nginx Config File] ***************************************************************************************************************
+2023-02-18 00:10:09,947 p=17069 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:10:09,975 p=17069 u=budayabanu n=ansible | TASK [Allow HTTPS Traffic] ***********************************************************************************************************************************************
+2023-02-18 00:10:11,279 p=17069 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:10:11,299 p=17069 u=budayabanu n=ansible | TASK [Delete Nginx HTTP Rule] ********************************************************************************************************************************************
+2023-02-18 00:10:11,983 p=17069 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:10:12,014 p=17069 u=budayabanu n=ansible | TASK [Restart Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:10:12,781 p=17069 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:10:12,810 p=17069 u=budayabanu n=ansible | TASK [Check Server Status] ***********************************************************************************************************************************************
+2023-02-18 00:10:13,043 p=17069 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:10:13,065 p=17069 u=budayabanu n=ansible | TASK [debug] *************************************************************************************************************************************************************
+2023-02-18 00:10:13,107 p=17069 u=budayabanu n=ansible | ok: [localhost] => {
+    "nginx_status": {
+        "changed": true, 
+        "cmd": [
+            "service", 
+            "nginx", 
+            "status"
+        ], 
+        "delta": "0:00:00.033922", 
+        "end": "2023-02-18 00:10:13.017658", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2023-02-18 00:10:12.983736", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "● nginx.service - A high performance web server and a reverse proxy server\n   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)\n   Active: active (running) since Sat 2023-02-18 00:10:12 IST; 295ms ago\n  Process: 18464 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)\n  Process: 18478 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)\n  Process: 18466 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)\n Main PID: 18481 (nginx)\n    Tasks: 5\n   Memory: 5.1M\n      CPU: 25ms\n   CGroup: /system.slice/nginx.service\n           ├─18481 nginx: master process /usr/sbin/nginx -g daemon on; master_process on\n           ├─18484 nginx: worker process                           \n           ├─18486 nginx: worker process                           \n           ├─18487 nginx: worker process                           \n           └─18488 nginx: worker process                           \n\nFeb 18 00:10:12 sherlock-HP-EliteBook-820-G3 systemd[1]: Starting A high performance web server and a reverse proxy server...\nFeb 18 00:10:12 sherlock-HP-EliteBook-820-G3 systemd[1]: Started A high performance web server and a reverse proxy server.", 
+        "stdout_lines": [
+            "● nginx.service - A high performance web server and a reverse proxy server", 
+            "   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)", 
+            "   Active: active (running) since Sat 2023-02-18 00:10:12 IST; 295ms ago", 
+            "  Process: 18464 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)", 
+            "  Process: 18478 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)", 
+            "  Process: 18466 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)", 
+            " Main PID: 18481 (nginx)", 
+            "    Tasks: 5", 
+            "   Memory: 5.1M", 
+            "      CPU: 25ms", 
+            "   CGroup: /system.slice/nginx.service", 
+            "           ├─18481 nginx: master process /usr/sbin/nginx -g daemon on; master_process on", 
+            "           ├─18484 nginx: worker process                           ", 
+            "           ├─18486 nginx: worker process                           ", 
+            "           ├─18487 nginx: worker process                           ", 
+            "           └─18488 nginx: worker process                           ", 
+            "", 
+            "Feb 18 00:10:12 sherlock-HP-EliteBook-820-G3 systemd[1]: Starting A high performance web server and a reverse proxy server...", 
+            "Feb 18 00:10:12 sherlock-HP-EliteBook-820-G3 systemd[1]: Started A high performance web server and a reverse proxy server."
+        ]
+    }
+}
+2023-02-18 00:10:13,146 p=17069 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure Nginx is running] *************************************************************************************************************************
+2023-02-18 00:10:13,203 p=17069 u=budayabanu n=ansible | fatal: [localhost]: FAILED! => {
+    "assertion": "nginx_status.stdout == 'A high performance web server and a reverse proxy server'", 
+    "changed": false, 
+    "evaluated_to": false, 
+    "msg": "Assertion failed"
+}
+2023-02-18 00:10:13,204 p=17069 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure HTTP redirects to HTTPS] ******************************************************************************************************************
+2023-02-18 00:10:13,777 p=17069 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:10:13,778 p=17069 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure Port 443 is open] *************************************************************************************************************************
+2023-02-18 00:10:14,235 p=17069 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:10:14,236 p=17069 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Check loading site via HTTPS] ********************************************************************************************************************
+2023-02-18 00:10:14,670 p=17069 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:10:14,671 p=17069 u=budayabanu n=ansible | NO MORE HOSTS LEFT *******************************************************************************************************************************************************
+2023-02-18 00:10:14,673 p=17069 u=budayabanu n=ansible | PLAY RECAP ***************************************************************************************************************************************************************
+2023-02-18 00:10:14,673 p=17069 u=budayabanu n=ansible | localhost                  : ok=18   changed=6    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2023-02-18 00:11:05,155 p=23018 u=budayabanu n=ansible | [DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 2.7.12 (default, Mar  1 2021, 11:38:31) 
+[GCC 5.4.0 20160609]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2023-02-18 00:11:07,560 p=23018 u=budayabanu n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2023-02-18 00:11:07,820 p=23018 u=budayabanu n=ansible | PLAY [Setup secure Nginx webserver (hosting Hello World page)] ***********************************************************************************************************
+2023-02-18 00:11:07,837 p=23018 u=budayabanu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************
+2023-02-18 00:11:09,269 p=23018 u=budayabanu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.11/reference_appendices/interpreter_discovery.html for more information. This feature will be removed in version 2.12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-02-18 00:11:09,269 p=23018 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:11:09,325 p=23018 u=budayabanu n=ansible | TASK [Install Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:11:13,039 p=23018 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:11:13,063 p=23018 u=budayabanu n=ansible | TASK [Create Nginx Backup Directory] *************************************************************************************************************************************
+2023-02-18 00:11:13,395 p=23018 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:11:13,427 p=23018 u=budayabanu n=ansible | TASK [Create Document Backup Directory] **********************************************************************************************************************************
+2023-02-18 00:11:13,671 p=23018 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:11:13,722 p=23018 u=budayabanu n=ansible | TASK [Create Nginx Directory for TLS/SSL Cert & Key Files] ***************************************************************************************************************
+2023-02-18 00:11:13,912 p=23018 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:11:13,945 p=23018 u=budayabanu n=ansible | TASK [Generate a Self Signed OpenSSL certificate & key] ******************************************************************************************************************
+2023-02-18 00:11:14,302 p=23018 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:11:14,329 p=23018 u=budayabanu n=ansible | TASK [Backup Original Nginx Conf] ****************************************************************************************************************************************
+2023-02-18 00:11:14,521 p=23018 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:11:14,543 p=23018 u=budayabanu n=ansible | TASK [Backup Original index.html] ****************************************************************************************************************************************
+2023-02-18 00:11:14,748 p=23018 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:11:14,766 p=23018 u=budayabanu n=ansible | TASK [Install Custom index.html] *****************************************************************************************************************************************
+2023-02-18 00:11:15,457 p=23018 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:11:15,486 p=23018 u=budayabanu n=ansible | TASK [Install Custom (TLS/SSL modified) Nginx Config File] ***************************************************************************************************************
+2023-02-18 00:11:15,894 p=23018 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:11:15,912 p=23018 u=budayabanu n=ansible | TASK [Allow HTTPS Traffic] ***********************************************************************************************************************************************
+2023-02-18 00:11:16,984 p=23018 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:11:17,019 p=23018 u=budayabanu n=ansible | TASK [Delete Nginx HTTP Rule] ********************************************************************************************************************************************
+2023-02-18 00:11:17,731 p=23018 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:11:17,762 p=23018 u=budayabanu n=ansible | TASK [Restart Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:11:18,416 p=23018 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:11:18,448 p=23018 u=budayabanu n=ansible | TASK [Check Server Status] ***********************************************************************************************************************************************
+2023-02-18 00:11:18,649 p=23018 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:11:18,670 p=23018 u=budayabanu n=ansible | TASK [debug] *************************************************************************************************************************************************************
+2023-02-18 00:11:18,712 p=23018 u=budayabanu n=ansible | ok: [localhost] => {
+    "nginx_status": {
+        "changed": true, 
+        "cmd": [
+            "service", 
+            "nginx", 
+            "status"
+        ], 
+        "delta": "0:00:00.018624", 
+        "end": "2023-02-18 00:11:18.618138", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2023-02-18 00:11:18.599514", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "● nginx.service - A high performance web server and a reverse proxy server\n   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)\n   Active: active (running) since Sat 2023-02-18 00:11:18 IST; 244ms ago\n  Process: 24397 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)\n  Process: 24418 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)\n  Process: 24406 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)\n Main PID: 24424 (nginx)\n    Tasks: 5\n   Memory: 5.0M\n      CPU: 26ms\n   CGroup: /system.slice/nginx.service\n           ├─24424 nginx: master process /usr/sbin/nginx -g daemon on; master_process on\n           ├─24429 nginx: worker process                           \n           ├─24430 nginx: worker process                           \n           ├─24432 nginx: worker process                           \n           └─24433 nginx: worker process                           \n\nFeb 18 00:11:18 sherlock-HP-EliteBook-820-G3 systemd[1]: Starting A high performance web server and a reverse proxy server...\nFeb 18 00:11:18 sherlock-HP-EliteBook-820-G3 systemd[1]: nginx.service: Failed to parse PID from file /run/nginx.pid: Invalid argument\nFeb 18 00:11:18 sherlock-HP-EliteBook-820-G3 systemd[1]: Started A high performance web server and a reverse proxy server.", 
+        "stdout_lines": [
+            "● nginx.service - A high performance web server and a reverse proxy server", 
+            "   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)", 
+            "   Active: active (running) since Sat 2023-02-18 00:11:18 IST; 244ms ago", 
+            "  Process: 24397 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)", 
+            "  Process: 24418 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)", 
+            "  Process: 24406 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)", 
+            " Main PID: 24424 (nginx)", 
+            "    Tasks: 5", 
+            "   Memory: 5.0M", 
+            "      CPU: 26ms", 
+            "   CGroup: /system.slice/nginx.service", 
+            "           ├─24424 nginx: master process /usr/sbin/nginx -g daemon on; master_process on", 
+            "           ├─24429 nginx: worker process                           ", 
+            "           ├─24430 nginx: worker process                           ", 
+            "           ├─24432 nginx: worker process                           ", 
+            "           └─24433 nginx: worker process                           ", 
+            "", 
+            "Feb 18 00:11:18 sherlock-HP-EliteBook-820-G3 systemd[1]: Starting A high performance web server and a reverse proxy server...", 
+            "Feb 18 00:11:18 sherlock-HP-EliteBook-820-G3 systemd[1]: nginx.service: Failed to parse PID from file /run/nginx.pid: Invalid argument", 
+            "Feb 18 00:11:18 sherlock-HP-EliteBook-820-G3 systemd[1]: Started A high performance web server and a reverse proxy server."
+        ]
+    }
+}
+2023-02-18 00:11:18,743 p=23018 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure Nginx is running] *************************************************************************************************************************
+2023-02-18 00:11:18,791 p=23018 u=budayabanu n=ansible | ok: [localhost] => {
+    "changed": false, 
+    "msg": "All assertions passed"
+}
+2023-02-18 00:11:18,791 p=23018 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure HTTP redirects to HTTPS] ******************************************************************************************************************
+2023-02-18 00:11:19,325 p=23018 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:11:19,326 p=23018 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure Port 443 is open] *************************************************************************************************************************
+2023-02-18 00:11:19,728 p=23018 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:11:19,729 p=23018 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Check loading site via HTTPS] ********************************************************************************************************************
+2023-02-18 00:11:20,079 p=23018 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:11:20,099 p=23018 u=budayabanu n=ansible | PLAY RECAP ***************************************************************************************************************************************************************
+2023-02-18 00:11:20,099 p=23018 u=budayabanu n=ansible | localhost                  : ok=19   changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2023-02-18 00:14:02,111 p=6140 u=budayabanu n=ansible | [DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 2.7.12 (default, Mar  1 2021, 11:38:31) 
+[GCC 5.4.0 20160609]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can be disabled by setting deprecation_warnings=False in 
+ansible.cfg.
+2023-02-18 00:14:04,867 p=6140 u=budayabanu n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2023-02-18 00:14:05,003 p=6140 u=budayabanu n=ansible | PLAY [Setup secure Nginx webserver (hosting Hello World page)] ***********************************************************************************************************
+2023-02-18 00:14:05,014 p=6140 u=budayabanu n=ansible | TASK [Gathering Facts] ***************************************************************************************************************************************************
+2023-02-18 00:14:06,269 p=6140 u=budayabanu n=ansible | [DEPRECATION WARNING]: Distribution Ubuntu 16.04 on host localhost should use /usr/bin/python3, but is using /usr/bin/python for backward compatibility with prior 
+Ansible releases. A future Ansible release will default to using the discovered platform python for this host. See 
+https://docs.ansible.com/ansible/2.11/reference_appendices/interpreter_discovery.html for more information. This feature will be removed in version 2.12. Deprecation 
+warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2023-02-18 00:14:06,269 p=6140 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:14:06,324 p=6140 u=budayabanu n=ansible | TASK [Install Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:14:09,971 p=6140 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:14:09,990 p=6140 u=budayabanu n=ansible | TASK [Create Nginx Backup Directory] *************************************************************************************************************************************
+2023-02-18 00:14:10,315 p=6140 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:14:10,335 p=6140 u=budayabanu n=ansible | TASK [Create Document Backup Directory] **********************************************************************************************************************************
+2023-02-18 00:14:10,548 p=6140 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:14:10,592 p=6140 u=budayabanu n=ansible | TASK [Create Nginx Directory for TLS/SSL Cert & Key Files] ***************************************************************************************************************
+2023-02-18 00:14:10,823 p=6140 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:14:10,846 p=6140 u=budayabanu n=ansible | TASK [Generate a Self Signed OpenSSL certificate & key] ******************************************************************************************************************
+2023-02-18 00:14:11,184 p=6140 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:14:11,206 p=6140 u=budayabanu n=ansible | TASK [Backup Original Nginx Conf] ****************************************************************************************************************************************
+2023-02-18 00:14:11,416 p=6140 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:14:11,448 p=6140 u=budayabanu n=ansible | TASK [Backup Original index.html] ****************************************************************************************************************************************
+2023-02-18 00:14:11,694 p=6140 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:14:11,724 p=6140 u=budayabanu n=ansible | TASK [Install Custom index.html] *****************************************************************************************************************************************
+2023-02-18 00:14:12,467 p=6140 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:14:12,495 p=6140 u=budayabanu n=ansible | TASK [Install Custom (TLS/SSL modified) Nginx Config File] ***************************************************************************************************************
+2023-02-18 00:14:12,873 p=6140 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:14:12,891 p=6140 u=budayabanu n=ansible | TASK [Allow HTTPS Traffic] ***********************************************************************************************************************************************
+2023-02-18 00:14:13,954 p=6140 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:14:13,978 p=6140 u=budayabanu n=ansible | TASK [Delete Nginx HTTP Rule] ********************************************************************************************************************************************
+2023-02-18 00:14:14,595 p=6140 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:14:14,613 p=6140 u=budayabanu n=ansible | TASK [Restart Nginx] *****************************************************************************************************************************************************
+2023-02-18 00:14:15,186 p=6140 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:14:15,205 p=6140 u=budayabanu n=ansible | TASK [Check Server Status] ***********************************************************************************************************************************************
+2023-02-18 00:14:15,370 p=6140 u=budayabanu n=ansible | changed: [localhost]
+2023-02-18 00:14:15,388 p=6140 u=budayabanu n=ansible | TASK [debug] *************************************************************************************************************************************************************
+2023-02-18 00:14:15,418 p=6140 u=budayabanu n=ansible | ok: [localhost] => {
+    "nginx_status": {
+        "changed": true, 
+        "cmd": [
+            "service", 
+            "nginx", 
+            "status"
+        ], 
+        "delta": "0:00:00.012066", 
+        "end": "2023-02-18 00:14:15.347446", 
+        "failed": false, 
+        "rc": 0, 
+        "start": "2023-02-18 00:14:15.335380", 
+        "stderr": "", 
+        "stderr_lines": [], 
+        "stdout": "● nginx.service - A high performance web server and a reverse proxy server\n   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)\n   Active: active (running) since Sat 2023-02-18 00:14:15 IST; 197ms ago\n  Process: 7610 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)\n  Process: 7624 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)\n  Process: 7612 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)\n Main PID: 7627 (nginx)\n    Tasks: 5\n   Memory: 5.0M\n      CPU: 22ms\n   CGroup: /system.slice/nginx.service\n           ├─7627 nginx: master process /usr/sbin/nginx -g daemon on; master_process on\n           ├─7628 nginx: worker process                           \n           ├─7629 nginx: worker process                           \n           ├─7630 nginx: worker process                           \n           └─7631 nginx: worker process                           \n\nFeb 18 00:14:15 sherlock-HP-EliteBook-820-G3 systemd[1]: Starting A high performance web server and a reverse proxy server...\nFeb 18 00:14:15 sherlock-HP-EliteBook-820-G3 systemd[1]: Started A high performance web server and a reverse proxy server.", 
+        "stdout_lines": [
+            "● nginx.service - A high performance web server and a reverse proxy server", 
+            "   Loaded: loaded (/lib/systemd/system/nginx.service; enabled; vendor preset: enabled)", 
+            "   Active: active (running) since Sat 2023-02-18 00:14:15 IST; 197ms ago", 
+            "  Process: 7610 ExecStop=/sbin/start-stop-daemon --quiet --stop --retry QUIT/5 --pidfile /run/nginx.pid (code=exited, status=0/SUCCESS)", 
+            "  Process: 7624 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)", 
+            "  Process: 7612 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)", 
+            " Main PID: 7627 (nginx)", 
+            "    Tasks: 5", 
+            "   Memory: 5.0M", 
+            "      CPU: 22ms", 
+            "   CGroup: /system.slice/nginx.service", 
+            "           ├─7627 nginx: master process /usr/sbin/nginx -g daemon on; master_process on", 
+            "           ├─7628 nginx: worker process                           ", 
+            "           ├─7629 nginx: worker process                           ", 
+            "           ├─7630 nginx: worker process                           ", 
+            "           └─7631 nginx: worker process                           ", 
+            "", 
+            "Feb 18 00:14:15 sherlock-HP-EliteBook-820-G3 systemd[1]: Starting A high performance web server and a reverse proxy server...", 
+            "Feb 18 00:14:15 sherlock-HP-EliteBook-820-G3 systemd[1]: Started A high performance web server and a reverse proxy server."
+        ]
+    }
+}
+2023-02-18 00:14:15,437 p=6140 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure Nginx is running] *************************************************************************************************************************
+2023-02-18 00:14:15,473 p=6140 u=budayabanu n=ansible | ok: [localhost] => {
+    "changed": false, 
+    "msg": "All assertions passed"
+}
+2023-02-18 00:14:15,474 p=6140 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure HTTP redirects to HTTPS] ******************************************************************************************************************
+2023-02-18 00:14:16,047 p=6140 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:14:16,048 p=6140 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Ensure Port 443 is open] *************************************************************************************************************************
+2023-02-18 00:14:16,520 p=6140 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:14:16,520 p=6140 u=budayabanu n=ansible | RUNNING HANDLER [TEST ~ Check loading site via HTTPS] ********************************************************************************************************************
+2023-02-18 00:14:16,990 p=6140 u=budayabanu n=ansible | ok: [localhost]
+2023-02-18 00:14:17,047 p=6140 u=budayabanu n=ansible | PLAY RECAP ***************************************************************************************************************************************************************
+2023-02-18 00:14:17,047 p=6140 u=budayabanu n=ansible | localhost                  : ok=19   changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
